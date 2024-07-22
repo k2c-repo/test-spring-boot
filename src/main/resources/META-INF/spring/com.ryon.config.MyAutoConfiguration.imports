@@ -1,3 +1,5 @@
 com.ryon.config.autoconfig.DispatcherServletConfig
 com.ryon.config.autoconfig.TomcatWebServerConfig
 com.ryon.config.autoconfig.JettyWebServerConfig
+com.ryon.config.autoconfig.PropertyPlaceholderConfig
+com.ryon.config.autoconfig.ServerPropertiesConfig
