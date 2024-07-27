@@ -12,7 +12,8 @@ import org.springframework.context.annotation.*;
 @MyAutoConfiguration
 //@Conditional(TomcatWebServerConfig.TomcatCondition.class)
 @ConditionMyOwnClass("org.apache.catalina.startup.Tomcat")
-@EnableMyConfigurationProperties(ServerProperties.class)
+//@EnableMyConfigurationProperties(ServerProperties.class)
+//@Import(ServerProperties.class)
 public class TomcatWebServerConfig {
     @Bean("tomcatWebServerFactory")
     @ConditionalOnMissingBean
