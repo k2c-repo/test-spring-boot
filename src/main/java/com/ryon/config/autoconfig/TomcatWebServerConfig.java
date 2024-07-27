@@ -1,6 +1,7 @@
 package com.ryon.config.autoconfig;
 
 import com.ryon.config.ConditionMyOwnClass;
+import com.ryon.config.EnableMyConfigurationProperties;
 import com.ryon.config.MyAutoConfiguration;
 import org.springframework.boot.autoconfigure.condition.ConditionalOnMissingBean;
 import org.springframework.boot.web.embedded.tomcat.TomcatServletWebServerFactory;
@@ -11,6 +12,7 @@ import org.springframework.context.annotation.*;
 @MyAutoConfiguration
 //@Conditional(TomcatWebServerConfig.TomcatCondition.class)
 @ConditionMyOwnClass("org.apache.catalina.startup.Tomcat")
+@EnableMyConfigurationProperties(ServerProperties.class)
 public class TomcatWebServerConfig {
     @Bean("tomcatWebServerFactory")
     @ConditionalOnMissingBean

@@ -1,5 +1,10 @@
 package com.ryon.config.autoconfig;
 
+import com.ryon.config.MyConfigurationProperties;
+import org.springframework.context.annotation.Bean;
+import org.springframework.stereotype.Component;
+
+@MyConfigurationProperties(prefix = "server")
 public class ServerProperties {
     private String contextPath;
 

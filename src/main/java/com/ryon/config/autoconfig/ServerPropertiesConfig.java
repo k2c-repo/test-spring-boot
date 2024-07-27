@@ -1,12 +1,12 @@
 package com.ryon.config.autoconfig;
 
 import com.ryon.config.MyAutoConfiguration;
+import org.springframework.boot.context.properties.bind.BindResult;
 import org.springframework.boot.context.properties.bind.Binder;
 import org.springframework.context.annotation.Bean;
 import org.springframework.core.env.Environment;
 
-import java.util.Objects;
-
+@Deprecated
 @MyAutoConfiguration
 public class ServerPropertiesConfig {
     @Bean
